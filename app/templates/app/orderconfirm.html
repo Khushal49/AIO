@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Confirmed{% endblock title %}
+{% block main-content %}
+<div class="container">
+ <div class="row mt-5">
+  <div class="col-sm-6">
+    <h4>OrderConfirm</h4>
+    <form action="/paymentdone">
+        {% for rs in response %}
+        <p>{{rs.id}}, {{rs.amount}}, {{rs.status}}</p>

@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% block title %}Paymentdone{% endblock title %}
+{% block main-content %}
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <form action="/order_success" method= "GET">
+        <h3>payment_done:"oid=",{{order_id}},"pid=",{{payment_id}},"cid=",{{cust_id}}</h3>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
